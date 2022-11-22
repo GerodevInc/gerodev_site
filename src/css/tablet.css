@@ -3,7 +3,6 @@ main {
 }
 
 main .principal-section{
-    display: grid;
     grid-template-rows: 200px 200px;
     grid-template-columns: 300px 350px;
     column-gap: 10%;
@@ -14,18 +13,7 @@ main .principal-section{
     height: 60vh;
     max-height: 450px;
 }
-/* main .principal-section{
-    display: grid;
-    grid-template-rows: 300px 100px;
-    grid-template-columns: 300px 350px;
-    column-gap: 20px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 40px 0 0px 0;
-    height: 90vh;
-    max-height: 550px;
-} */
+
 
 main .principal-section img {
     width: 100%;
@@ -39,13 +27,8 @@ main .principal-section img {
 main .principal-section h1{
     padding-top: 20%;
 }
-/* main .principal-section img {
-    width: 100%;
-    padding-top: 40%;
-} */
 
 main .introduce-section{
-    display: grid;
     grid-template-rows: 200px 200px;
     grid-template-columns: 300px 300px;
     column-gap: 12%;
@@ -56,19 +39,6 @@ main .introduce-section{
     height: 80vh;
     max-height: 500px;
 }
-/* main .introduce-section{
-    display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 300px 300px;
-    column-gap: 20px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 40px 0 0px 0;
-    height: 80vh;
-    max-height: 550px;
-    
-} */
 
 main .introduce-section img{
     grid-row-start: 1;
@@ -77,19 +47,17 @@ main .introduce-section img{
     grid-column-end: 3;
     padding-top: 40%;
 }
-/* main .introduce-section img{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding-top: 40%;
-} */
+main .introduce-section h2{
+    text-align: start;
+    
+}
 
 main .introduce-section p {
-    text-align: center;
+    text-align: left;
 }
 
 
 main .show-section{
-    display: grid;
     grid-template-rows: 200px 200px;
     grid-template-columns: 300px 300px;
     column-gap: 12%;
@@ -105,6 +73,10 @@ main .show-section img{
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+main .show-section h2{
+    text-align: start;
 }
 
 main .branding-section {

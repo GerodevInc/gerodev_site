@@ -1,0 +1,185 @@
+/* HEADER */
+
+header nav .right-section img{
+    display: none;
+}
+header nav .right-section .nav-links {
+    display: block;
+    width: 100%;
+}
+
+header nav .right-section .nav-links ul {
+    display: flex;
+    /* place-content: center; */
+    justify-content: space-around;
+    text-decoration: none;
+    padding-left: 20%;
+
+}
+
+header nav .right-section .nav-links li {
+    text-decoration: none;
+    list-style: none;
+    /* padding-left: 10%; */
+}
+
+header nav .right-section .nav-links a {
+    text-decoration: none;
+    color: var(--just-black);
+}   
+
+/* MAIN */
+
+main .principal-section{
+    height: 90vh;
+    grid-template-rows: 350px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
+    max-height: none;
+    align-content: center;
+    column-gap: 30%;
+    margin-top: 0;
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 5%;
+    
+}
+
+main .principal-section h1 {
+    /* font-size: 6rem; */
+    font-size: 4.5rem;
+    /* width: 800px; */
+    width: 500px;
+}
+
+main .principal-section .btn-main {
+    margin-right: 10%;
+    
+
+}
+
+main .principal-section img {
+    width: 100%;
+    max-width: 600px;
+    min-width: 500px;
+    
+}
+
+main .introduce-section{
+    grid-template-rows: 250px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
+    column-gap: 10%;
+    max-height: 700px;
+    align-content: center;
+    margin-top: 0;
+}
+
+main .introduce-section img {
+    min-width: 400px;
+    padding-top: 0;
+}
+
+main .introduce-section h2{
+    font-size: 4rem;
+    width: 400px;
+}
+
+main .introduce-section p{
+    font-size: 1.4rem;
+    width: 400px;
+}
+
+main .show-section{
+    grid-template-rows: 400px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
+    column-gap: 10%;
+    height: 80vh;
+    max-height: 700px;
+}
+
+main .show-section h2 {
+    font-size: 3.5rem;
+    width: 600px;
+    text-align: start;
+    margin-bottom: 50px;
+
+}
+
+main .show-section p{
+    font-size: 1.4rem;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+main .show-section img {
+    min-width: 500px;
+}
+
+main .branding-section .container-img img{
+    max-width: 700px;
+    /* max-width: 800px; */
+}
+
+main .branding-section .banner{
+    position: absolute;
+    top: 10px;
+    padding-top: 450px;
+    margin-left: 8%;
+}
+
+main .branding-section h2{
+    font-size: 4.5rem;
+    /* font-size: 6rem; */
+    top: 40px;
+}
+
+main .grow-section{
+    grid-template-rows: repeat(3, auto);
+    margin: 0 auto;
+    padding-bottom: 60px;
+    width: 90%;
+    margin-top: 80px;
+}
+
+main .grow-section h2 {
+    font-size: 4rem;
+    max-width: 600px;
+}
+
+main .grow-section img{
+    min-width: 600px;
+}
+
+main .grow-section p{
+    min-width: 500px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1320px) {
+    main .introduce-section{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+        column-gap: 5%;
+    }
+
+    main .introduce-section img{
+        max-width: 500px;
+    }
+    main .show-section{
+        grid-template-rows: 400px 200px;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 600px));
+        column-gap: 5%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    main .branding-section h2{
+        font-size: 6rem;
+    }
+    main .branding-section .container-img img{
+        max-width: 800px;
+        
+    }
+}
+
+/* @media only screen and (min-width: 1637px){
+
+} */

@@ -39,6 +39,10 @@ header nav .right-section{
     margin-right: 27px;
 }
 
+header nav .right-section .nav-links{
+    display: none;
+}
+
 /* MAIN */
 
 main {
@@ -81,6 +85,10 @@ main .branding-section .btn-main a{
     margin-bottom: 70px;
 }
 
+main .principal-section .view-more{
+    display: none;
+}
+
 main .introduce-section {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -96,7 +104,7 @@ main .introduce-section h2 {
 
 main .introduce-section img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     
 }
 
