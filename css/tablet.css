@@ -1,0 +1,126 @@
+main {
+    width: 100%;
+}
+
+main .principal-section{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 350px;
+    column-gap: 10%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 40px 0 0px 0;
+    height: 60vh;
+    max-height: 450px;
+}
+/* main .principal-section{
+    display: grid;
+    grid-template-rows: 300px 100px;
+    grid-template-columns: 300px 350px;
+    column-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 40px 0 0px 0;
+    height: 90vh;
+    max-height: 550px;
+} */
+
+main .principal-section img {
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+main .principal-section h1{
+    padding-top: 20%;
+}
+/* main .principal-section img {
+    width: 100%;
+    padding-top: 40%;
+} */
+
+main .introduce-section{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+    column-gap: 12%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 40px 0 0px 0;
+    height: 80vh;
+    max-height: 500px;
+}
+/* main .introduce-section{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+    column-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 40px 0 0px 0;
+    height: 80vh;
+    max-height: 550px;
+    
+} */
+
+main .introduce-section img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 40%;
+}
+/* main .introduce-section img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 40%;
+} */
+
+main .introduce-section p {
+    text-align: center;
+}
+
+
+main .show-section{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+    column-gap: 12%;
+    place-items: center;
+    place-content: center;
+    margin: 60px 0 0px 0;
+    height: 60vh;
+    max-height: 600px;
+}
+
+main .show-section img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+main .branding-section {
+    position: relative;
+}
+main .branding-section .container-img img{
+    max-width: 450px;
+}
+main .branding-section .banner{
+    position: absolute;
+    top: 10px;
+    padding-top: 250px;
+    margin-left: 8%;
+}
+main .branding-section h2{
+    font-size: 3rem;
+    top: 40px;
+}
+

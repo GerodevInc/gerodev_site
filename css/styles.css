@@ -1,0 +1,239 @@
+:root{
+    --just-black: #000000;
+    --just-white: #FFFFFF;
+    --opaque-white: #DDD9D9;
+
+    --principal-font: 'Inter Tight', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--principal-font);
+}
+
+/* HEADER */
+header{
+    width: 100%;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .left-section{
+    margin-left: 8px;
+}
+
+header nav .left-section img{
+    width: 90px;
+}
+
+header nav .right-section{
+    display: flex;
+    justify-content: end;
+    margin-right: 27px;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+main .principal-section{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+main .principal-section h1{
+    width: 260px;
+    text-align: left;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 40px auto 60px auto;
+}
+
+main .principal-section img{
+    width: 266px;
+    margin-bottom: 50px;
+}
+main .principal-section .btn-main a{
+    order: 1;
+}
+main .principal-section .btn-main a,
+main .branding-section .btn-main a{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: var(--just-white);
+    background-color: var(--just-black);
+    margin-bottom: 70px;
+}
+
+main .introduce-section {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    place-items: center;
+    background-color: var(--just-black);
+}
+
+main .introduce-section h2 {
+    font-size: 2rem;
+    margin: 50px auto 50px auto;
+    color: var(--just-white);
+}
+
+main .introduce-section img {
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+main .introduce-section p {
+    width: 80%;
+    margin: 30px auto 40px auto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--opaque-white);
+}
+
+main .offer-section .main-txt {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    margin: 60px 0 60px 12%;
+}
+
+main .offer-section .main-txt span{
+    font-weight: 700;
+    width: 200px;
+}
+
+main .offer-section .main-txt h2{
+    margin: 10px 0 20px 0;
+    font-size: 2rem;
+    width: 200px;
+}
+
+main .offer-section .main-txt p {
+    margin: 0 0 20px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--just-black);
+    width: 90%;
+}
+
+main .offer-section .main-txt .check-marks div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+main .offer-section .main-txt .check-marks i{
+    display: inline-block;
+    background-image: url("../assets/icons/icons8-checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+main .show-section {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    background-color: var(--just-black);
+    justify-items: center;
+}
+main .show-section  h2{
+    font-size: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 369px;
+    color: var(--just-white);
+    margin: 60px 0 30px 0px;
+}
+
+main .show-section img{
+    width: 100%;
+    max-width: 300px;
+}
+
+main .show-section p{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 90%;
+    max-width: 369px;
+    color: var(--opaque-white);
+    margin: 30px 0 60px 0;
+}
+
+main .branding-section{
+    padding-bottom: 80px;
+}
+
+main .branding-section .container-img{
+    display: flex;
+    justify-content: end;
+}
+main .branding-section .container-img img{
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+main .branding-section h2{
+    margin: 0;
+    font-size: 2rem;
+}
+
+main .branding-section .first-h2{
+    margin-left: 15px;
+}
+main .branding-section .last-h2{
+    margin-bottom: 10px;
+    margin-left: 70px;
+    
+}
+
+main .branding-section .btn-main a{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .grow-section{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+main .grow-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 400px;
+}
+main .grow-section img{
+    width: 100%;
+    max-width: 400px;
+}
+
+main .grow-section p {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 30px 0 60px 0;
+    text-align: center;
+}
