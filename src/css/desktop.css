@@ -33,7 +33,7 @@ header nav .right-section .nav-links a {
 main .principal-section{
     height: 90vh;
     grid-template-rows: 350px 200px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
     max-height: none;
     align-content: center;
     column-gap: 30%;
@@ -66,7 +66,7 @@ main .principal-section img {
 
 main .introduce-section{
     grid-template-rows: 250px 300px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
     column-gap: 10%;
     max-height: 700px;
     align-content: center;
@@ -87,7 +87,39 @@ main .introduce-section p{
     font-size: 1.4rem;
     width: 400px;
 }
+main .offer-section{
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+main .offer-section .main-txt span{
+    font-size: 1.5rem;
+}
 
+main .offer-section .main-txt h2{
+    font-size: 4rem;
+    width: 400px;
+}
+
+main .offer-section .main-txt p {
+    font-size: 1.2rem;
+}
+
+main .offer-section .main-txt .check-marks span{
+    width: 300px;
+}
+
+main .offer-section .container-images {
+    row-gap: 0;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 320px);
+    width: 100%;
+    justify-content: end;
+}
+
+main .offer-section .container-images img {
+    max-width: 300px;
+}
 main .show-section{
     grid-template-rows: 400px 200px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
@@ -116,7 +148,6 @@ main .show-section img {
 
 main .branding-section .container-img img{
     max-width: 700px;
-    /* max-width: 800px; */
 }
 
 main .branding-section .banner{
@@ -137,7 +168,12 @@ main .grow-section{
     margin: 0 auto;
     padding-bottom: 60px;
     width: 90%;
+    max-width: 1700px;
     margin-top: 80px;
+    background-image: url("../assets/imgs/background-arrows.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 main .grow-section h2 {
@@ -154,9 +190,28 @@ main .grow-section p{
     font-size: 1.5rem;
 }
 
+main .container-form{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+main .container-form h2{
+    font-size: 12rem;
+}
+
+main .container-form .title-form{
+    position: absolute;
+    top: 200px;
+}
+
+main .container-form .title-form h3{
+    font-size: 4rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 @media only screen and (min-width: 1320px) {
     main .introduce-section{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
         column-gap: 5%;
     }
 
@@ -165,7 +220,7 @@ main .grow-section p{
     }
     main .show-section{
         grid-template-rows: 400px 200px;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 600px));
+        grid-template-columns: repeat(auto-fit, minmax(500px, 900px));
         column-gap: 5%;
     }
 }
@@ -178,8 +233,16 @@ main .grow-section p{
         max-width: 800px;
         
     }
+    main .container-form h2{
+        font-size: 14rem;
+    }
+    main .container-form .title-form{
+        top: 300px;
+    }
 }
 
-/* @media only screen and (min-width: 1637px){
-
-} */
+@media only screen and (max-width: 1080px){
+    main .principal-section img{
+        min-width: 400px;
+    }
+}

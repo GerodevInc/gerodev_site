@@ -82,17 +82,44 @@ main .show-section h2{
 main .branding-section {
     position: relative;
 }
+
 main .branding-section .container-img img{
     max-width: 450px;
 }
+
 main .branding-section .banner{
     position: absolute;
     top: 10px;
     padding-top: 250px;
     margin-left: 8%;
 }
+
 main .branding-section h2{
     font-size: 3rem;
     top: 40px;
 }
+
+main .container-form h2{
+    font-size: 9rem;
+    /* 12 */
+}
+
+main .container-form .title-form{
+    position: absolute;
+    top: 200px;
+}
+
+main .container-form .title-form h3{
+    font-size: 3rem;
+    /* 4 */
+    margin: 0 auto;
+    max-width: 600px;
+    /* 800 */
+}
+
+@media only screen and (min-width: 906px) {
+    main .offer-section .container-images {
+        row-gap: 25%;
+    }
+} 
 
