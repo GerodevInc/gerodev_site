@@ -66,7 +66,7 @@ main .principal-section img {
 
 main .introduce-section{
     grid-template-rows: 250px 300px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
     column-gap: 10%;
     max-height: 700px;
     align-content: center;
@@ -211,16 +211,16 @@ main .container-form .title-form h3{
 
 @media only screen and (min-width: 1320px) {
     main .introduce-section{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
         column-gap: 5%;
     }
 
     main .introduce-section img{
-        max-width: 500px;
+        max-width: 450px;
     }
     main .show-section{
         grid-template-rows: 400px 200px;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 900px));
+        grid-template-columns: repeat(auto-fit, minmax(500px, 500px));
         column-gap: 5%;
     }
 }
