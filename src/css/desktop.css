@@ -36,7 +36,7 @@ main .principal-section{
     grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
     max-height: none;
     align-content: center;
-    column-gap: 30%;
+    column-gap: 20%;
     margin-top: 0;
     width: 70%;
     margin: 0 auto;
@@ -45,24 +45,62 @@ main .principal-section{
 }
 
 main .principal-section h1 {
-    /* font-size: 6rem; */
     font-size: 4.5rem;
-    /* width: 800px; */
     width: 500px;
 }
 
 main .principal-section .btn-main {
-    margin-right: 10%;
+    margin: 0 auto 0 0;
     
 
 }
 
-main .principal-section img {
-    width: 100%;
-    max-width: 600px;
-    min-width: 500px;
-    
+main .container-main-image .images-main .icon-image{
+    max-width: 60px;
+    position: absolute;
 }
+
+main .container-main-image .images-main .panda-image{
+    max-width: 400px;
+}
+main .container-main-image .images-main .icon-1{
+    top: -35px;
+    right: 230px;
+}
+
+main .container-main-image .images-main .icon-2{
+    top:-15px;
+    right: 120px;
+}
+
+main .container-main-image .images-main .icon-3{
+    top: 50px;
+    right: 10px;
+    max-width: 75px;
+}
+
+main .container-main-image .images-main .icon-4{
+    top: 180px;
+    right: -60px;
+    max-width: 75px;
+}
+
+main .container-main-image .images-main .icon-5{
+    top: 300px;
+    right: 10px;
+    max-width: 75px;
+}
+
+main .container-main-image .images-main .icon-6{
+    top: 340px;
+    right: 140px;
+    max-width: 75px;
+}
+
+main .container-main-image .images-main .icon-7{
+    top: 310px;
+    left: 58px;
+} 
 
 main .introduce-section{
     grid-template-rows: 250px 300px;
@@ -223,6 +261,80 @@ main .container-form .title-form h3{
         grid-template-columns: repeat(auto-fit, minmax(500px, 500px));
         column-gap: 5%;
     }
+
+    main .container-main-image .images-main .icon-image{
+        max-width: 70px;
+        position: absolute;
+    }
+    
+    main .container-main-image .images-main .panda-image{
+        max-width: 400px;
+    }
+    main .container-main-image .images-main .icon-1{
+        top: -35px;
+        right: 230px;
+    }
+    
+    main .container-main-image .images-main .icon-2{
+        top:-15px;
+        right: 120px;
+    }
+    
+    main .container-main-image .images-main .icon-3{
+        top: 50px;
+        right: 10px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-4{
+        top: 180px;
+        right: -60px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-5{
+        top: 300px;
+        right: 10px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-6{
+        top: 340px;
+        right: 140px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-7{
+        top: 310px;
+        left: 58px;
+    } 
+}
+
+
+@media only screen and (min-width: 1140px){
+    main .principal-section{
+        column-gap: 30%;
+    }
+
+    main .container-main-image .images-main .icon-image{
+        max-width: 70px;
+    }
+    
+    main .container-main-image .images-main .icon-3{
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-4{
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-5{
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-6{
+        max-width: 85px;
+    }
 }
 
 @media only screen and (min-width: 1440px){
@@ -241,8 +353,70 @@ main .container-form .title-form h3{
     }
 }
 
-@media only screen and (max-width: 1080px){
-    main .principal-section img{
-        min-width: 400px;
+@media only screen and (min-width: 1666px){
+    main .introduce-section{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
+        column-gap: 3%;
+    }
+
+    main .show-section {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 900px));
+        column-gap: 3%;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+    main .container-main-image .images-main .icon-image{
+        max-width: 75px;
+        position: absolute;
+    }
+    
+    main .container-main-image .images-main .panda-image{
+        max-width: 500px;
+    }
+    main .container-main-image .images-main .icon-1{
+        top: -35px;
+        right: 270px;
+    }
+    
+    main .container-main-image .images-main .icon-2{
+        top: -5px;
+        right: 130px;
+    }
+    
+    main .container-main-image .images-main .icon-3{
+        top: 75px;
+        right: 10px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-4{
+        top: 230px;
+        right: -60px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-5{
+        top: 370px;
+        right: 20px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-6{
+        top: 410px;
+        right: 170px;
+        max-width: 85px;
+    }
+    
+    main .container-main-image .images-main .icon-7{
+        top: 380px;
+        left: 108px;
+    } 
+}
+
+@media only screen and (min-width: 2050px){
+    main .principal-section .btn-main{
+        margin-right: 30%;
+        margin-top: 10%;
     }
 }
