@@ -10,8 +10,7 @@ main .principal-section{
     justify-items: center;
     align-items: center;
     margin: 40px 0 0px 0;
-    height: 60vh;
-    max-height: 450px;
+    height: 400px;
 }
 
 
@@ -89,8 +88,7 @@ main .introduce-section{
     justify-items: center;
     align-items: center;
     margin: 40px 0 0px 0;
-    height: 80vh;
-    max-height: 500px;
+    height: 500px;
 }
 
 main .introduce-section img{
@@ -108,7 +106,14 @@ main .introduce-section h2{
 main .introduce-section p {
     text-align: left;
 }
+main .offer-section .container-images{
+    grid-template-columns: repeat(3, 250px);
+    justify-content: end;
+}
 
+main .offer-section .container-images img{
+    max-width: 230px;
+}
 
 main .show-section{
     grid-template-rows: 200px 200px;
@@ -117,8 +122,7 @@ main .show-section{
     place-items: center;
     place-content: center;
     margin: 60px 0 0px 0;
-    height: 60vh;
-    max-height: 600px;
+    height: 450px;
 }
 
 main .show-section img{
@@ -130,6 +134,10 @@ main .show-section img{
 
 main .show-section h2{
     text-align: start;
+}
+
+main .offer-section{
+    height: 600px;
 }
 
 main .branding-section {

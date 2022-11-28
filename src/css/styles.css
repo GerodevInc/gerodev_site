@@ -174,6 +174,7 @@ main .introduce-section p {
     font-weight: 400;
     color: var(--opaque-white);
 }
+
 main .offer-section{
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
@@ -185,6 +186,7 @@ main .offer-section{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 main .offer-section .main-txt {
     display: grid;
     grid-template-rows: repeat(4, auto);

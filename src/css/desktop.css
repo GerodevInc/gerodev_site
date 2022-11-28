@@ -41,6 +41,8 @@ main .principal-section{
     width: 70%;
     margin: 0 auto;
     padding-left: 5%;
+    min-height: 800px;
+    max-height: 1080px;
     
 }
 
@@ -106,7 +108,7 @@ main .introduce-section{
     grid-template-rows: 250px 300px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
     column-gap: 10%;
-    max-height: 700px;
+    height: 700px;
     align-content: center;
     margin-top: 0;
 }
@@ -129,6 +131,7 @@ main .offer-section{
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
+    height: 800px;
 }
 main .offer-section .main-txt span{
     font-size: 1.5rem;
@@ -153,6 +156,7 @@ main .offer-section .container-images {
     grid-template-columns: repeat(3, 320px);
     width: 100%;
     justify-content: end;
+    margin-top: 100px;
 }
 
 main .offer-section .container-images img {
@@ -162,8 +166,7 @@ main .show-section{
     grid-template-rows: 400px 200px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
     column-gap: 10%;
-    height: 80vh;
-    max-height: 700px;
+    height: 700px;
 }
 
 main .show-section h2 {
