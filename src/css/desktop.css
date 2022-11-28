@@ -423,3 +423,28 @@ main .container-form .title-form h3{
         margin-top: 10%;
     }
 }
+
+@media only screen and (min-width: 2900px){
+    main .principal-section{
+        column-gap: 0%;
+    }
+
+    main .principal-section .container-main-image{
+        margin-top: 30%;
+    }
+
+    main .introduce-section{
+        grid-template-columns: repeat(2, auto);
+        column-gap: 12%;
+    }
+
+    main .show-section{
+        grid-template-columns: repeat(2, auto);
+        column-gap: 12%;
+    }
+
+    main .branding-section{
+        width: 2000px;
+        margin: 0 auto;
+    }
+}
