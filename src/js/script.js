@@ -188,8 +188,8 @@ gsap.from(".banner h2", {
     },
     scrollTrigger: {
         trigger: ".branding-section",
-        start: "top 70%",
-        end: "top 55%",
+        start: "top 55%",
+        end: "top -20%",
         toggleActions: "play resume complete pause",
     },
 },
