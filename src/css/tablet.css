@@ -160,10 +160,16 @@ main .branding-section h2{
     top: 40px;
 }
 
+main .grow-section .img-container{
+    overflow-y:visible;
+    overflow-x: visible;
+}
+
 main .container-form h2{
     font-size: 9rem;
     /* 12 */
 }
+
 
 main .container-form .title-form{
     position: absolute;
@@ -180,7 +186,7 @@ main .container-form .title-form h3{
 
 @media only screen and (min-width: 906px) {
     main .offer-section .container-images {
-        row-gap: 25%;
+        row-gap: 15%;
     }
 } 
 

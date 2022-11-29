@@ -56,22 +56,193 @@ tl.fromTo(".images-main .icon-7", {y: -180, x: 5, opacity: 0, stagger:6}, {y:0, 
 
 
 
-// gsap.from(".introduce-section h2, .introduce-section p", {
-//     x: -200,
-//     duration: 1,
+gsap.from(".introduce-section h2, .introduce-section p", {
+    x: -200,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".introduce-section",
+        start: "top 70%", 
+        end: "top 55%",
+        toggleActions: "play resume complete pause",  
+        //              onEnter onLeave onEnterBack onLeaveBack
+        // markers: {      
+        //     startColor: "purple",
+        //     endColor: "fuchsia",
+        //     fontSize: "1.3rem",
+        //     indent: 100,
+        // },
+    }
+});
+
+gsap.from(".offer-section .main-txt span:nth-child(1)", {
+    x: -200,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".offer-section",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.from(".offer-section .main-txt h2, .offer-section .main-txt p", {
+    x: -200,
+    duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".offer-section .main-txt",
+        start: "top 70%",
+        end: "top 75%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.from(".offer-section .main-txt .check-marks div:nth-child(1)", {
+    x: -200,
+    duration: 0.5,
+    opacity: 0,
+    delay: 1,
+    scrollTrigger: {
+        trigger: ".offer-section .main-txt",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.from(".offer-section .main-txt .check-marks div:nth-child(2)", {
+    x: -200,
+    duration: 0.5,
+    opacity: 0,
+    delay: 1.5,
+    scrollTrigger: {
+        trigger: ".offer-section .main-txt",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.from(".container-images .image-one, .container-images .image-two, .container-images .image-three, .container-images .image-four, .container-images .image-five, .container-images .image-six, .container-images .image-seven", {
+    x: -200,
+    duration: 1,
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".offer-section .main-txt p",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.from(".show-section h2, .show-section p", {
+    x: -200,
+    duration: 0.5,
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".show-section",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.from(".show-section img", {
+    y: 200,
+    duration: 0.5,
+    opacity: 0,
+    delay: 1,
+    scrollTrigger: {
+        trigger: ".show-section",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+// gsap.from(".branding-section .container-img img", {
+//     x: 200,
+//     duration: 0.5,
 //     opacity: 0,
 //     scrollTrigger: {
-//         trigger: ".introduce-section",
-//         start: "top 50%", //We could use px, or numbers or top, center and bottom
+//         trigger: ".branding-section",
+//         start: "top 50%",
 //         end: "top 35%",
-//         toggleActions: "complete complete complete complete ",  // Keywords:  restart, play, reverse, pause, resume, reset, complete, none
-//         //              onEnter onLeave onEnterBack onLeaveBack
-//         scrub: 0.5,
-//         // markers: {      // We could put true (With default settings) or modify the default settings
-//         //     startColor: "purple",
-//         //     endColor: "fuchsia",
-//         //     fontSize: "1.3rem",
-//         //     indent: 100,
-//         // },
-//     }
+//         toggleActions: "play resume complete pause",
+//     },
 // });
+
+
+
+gsap.from(".banner h2", {
+    y:100,
+    skewY:5,
+    opacity: 0,
+    duration: 1,
+    stagger: {
+        amount: 0.4,
+    },
+    scrollTrigger: {
+        trigger: ".branding-section",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+},
+"-=1"
+);
+
+gsap.from(".grow-section h2", {
+    x: -500,
+    duration: 0.5,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".grow-section",
+        start: "top 70%",
+        end: "top 55%",
+        toggleActions: "play resume complete pause",
+    },
+});
+
+gsap.to(".grow-section img", {
+    x: 550,
+    scrub: 5,
+    scrollTrigger: {
+        trigger: ".img-container",
+        start: "top 30%", 
+        end: "top -2%",
+        toggleActions: "restart none none none",  
+        //              onEnter onLeave onEnterBack onLeaveBack
+        scrub: 1,
+        // markers: {      
+        //     startColor: "purple",
+        //     endColor: "fuchsia",
+        //     fontSize: "1.3rem",
+        //     indent: 100,
+        // },
+    }
+});
+
+
+gsap.to(".grow-section img", {
+    y: 850,
+    scrub: 5,
+    scrollTrigger: {
+        trigger: ".img-container",
+        start: "bottom 70%", 
+        end: "bottom 40%",
+        toggleActions: "restart none none none",  
+        //              onEnter onLeave onEnterBack onLeaveBack
+        scrub: 1,
+        // markers: {      
+        //     startColor: "blue",
+        //     endColor: "yellow",
+        //     fontSize: "1.3rem",
+        //     indent: 100,
+        // },
+    }
+});
