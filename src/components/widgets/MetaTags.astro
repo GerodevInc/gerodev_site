@@ -1,0 +1,16 @@
+---
+const {meta = {
+    title: "GeroDev",
+    description: "Software development agency. Astro, HTML, CSS, JS, React, Django, Node.js",
+}} =  Astro.props;
+---
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content={meta.description}>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Daniel Diaz">
+<meta name="author" content="Nicolas Gil">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/favicon.svg">
+<title>{meta.title}</title>

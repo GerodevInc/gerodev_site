@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Header from "../components/widgets/Header.astro";
+import MainSection from "../components/widgets/MainSection.astro";
+import IntroduceSection from "../components/widgets/IntroduceSection.astro";
+import OfferSection from "../components/widgets/OfferSection.astro";
+import ShowSection from "../components/widgets/ShowSection.astro";
+import ConversionForm from "../components/widgets/ConversionForm.astro";
+import Footer from "../components/widgets/Footer.astro";
+import Scripts from "../components/widgets/Scripts.astro";
+import GrowSection from "../components/widgets/GrowSection.astro";
+import BrandingSection from "../components/widgets/BrandingSection.astro";
+
+const meta = {
+  title: "Home | GeroDev",
+};
+---
+
+<BaseLayout meta={meta}>
+  <div class="overflow-hidden">
+    <Header />
+    <MainSection />
+    <IntroduceSection />
+    <OfferSection />
+    <ShowSection />
+    <BrandingSection />
+    <GrowSection />
+    <ConversionForm />
+    <Footer />
+    <Scripts />
+  </div>
+</BaseLayout>

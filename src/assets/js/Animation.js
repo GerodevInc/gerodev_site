@@ -1,27 +1,30 @@
-const tl = gsap.timeline();
-gsap.registerPlugin(ScrollTrigger);
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
-tl.from(".left-section, .right-section .nav-links  li",{
+gsap.registerPlugin(ScrollTrigger);
+let tl = gsap.timeline();
+
+tl.from(".left-section, .right-section .nav-links  li", {
     duration: 1,
     delay: 0.5,
     opacity: 0,
-    y:50,
+    y: 50,
     stagger: {
         amount: 0.4,
     },
 });
 
 
-tl.from(".principal-section .panda-image",{
+tl.from(".principal-section .panda-image", {
     duration: 1,
-    delay:0.5,
+    delay: 0.5,
     opacity: 0,
     x: 100,
     skewX: 5
 },
-"-=1");
+    "-=1");
 
-tl.from(".principal-section h1",{
+tl.from(".principal-section h1", {
     duration: 1,
     delay: 0.5,
     opacity: 0,
@@ -31,7 +34,7 @@ tl.from(".principal-section h1",{
         amount: 0.4,
     },
 },
-"-=1");
+    "-=1");
 
 tl.from(".principal-section .btn-main", {
     duration: 1,
@@ -39,20 +42,20 @@ tl.from(".principal-section .btn-main", {
     opacity: 0,
     x: -100,
     skewX: 5,
-    stagger:{
+    stagger: {
         amount: 0.4,
     },
 },
-"-=1");
+    "-=1");
 
 
-tl.fromTo(".images-main .icon-1", {y: 150, opacity: 0, stagger:1}, {y:0, x: 0, opacity: 1, duration: 0.4,});
-tl.fromTo(".images-main .icon-2", {y: 150, x: -110, opacity: 0, stagger:2}, {y:0, x: 0, opacity: 1, duration: 0.4,});
-tl.fromTo(".images-main .icon-3", {y: 105, x: -210, opacity: 0, stagger:3}, {y:0, x: 0, opacity: 1, duration: 0.4,});
-tl.fromTo(".images-main .icon-4", {y: -40, x: -300, opacity: 0, stagger:4}, {y:0, x: 0, opacity: 1, duration: 0.4,});
-tl.fromTo(".images-main .icon-5", {y: -150, x: -220, opacity: 0, stagger:5}, {y:0, x: 0, opacity: 1, duration: 0.4,});
-tl.fromTo(".images-main .icon-6", {y: -180, x: -100, opacity: 0, stagger:6}, {y:0, x: 0, opacity: 1, duration: 0.4,});
-tl.fromTo(".images-main .icon-7", {y: -180, x: 5, opacity: 0, stagger:6}, {y:0, x: 0, opacity: 1, duration: 0.4,});
+tl.fromTo(".images-main .icon-1", { y: 150, opacity: 0, stagger: 1 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
+tl.fromTo(".images-main .icon-2", { y: 150, x: -110, opacity: 0, stagger: 2 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
+tl.fromTo(".images-main .icon-3", { y: 105, x: -210, opacity: 0, stagger: 3 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
+tl.fromTo(".images-main .icon-4", { y: -40, x: -300, opacity: 0, stagger: 4 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
+tl.fromTo(".images-main .icon-5", { y: -150, x: -220, opacity: 0, stagger: 5 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
+tl.fromTo(".images-main .icon-6", { y: -180, x: -100, opacity: 0, stagger: 6 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
+tl.fromTo(".images-main .icon-7", { y: -180, x: 5, opacity: 0, stagger: 6 }, { y: 0, x: 0, opacity: 1, duration: 0.4, });
 
 
 
@@ -62,9 +65,9 @@ gsap.from(".introduce-section h2, .introduce-section p", {
     opacity: 0,
     scrollTrigger: {
         trigger: ".introduce-section",
-        start: "top 70%", 
+        start: "top 70%",
         end: "top 55%",
-        toggleActions: "play resume complete pause",  
+        toggleActions: "play resume complete pause",
         //              onEnter onLeave onEnterBack onLeaveBack
         // markers: {      
         //     startColor: "purple",
@@ -179,8 +182,8 @@ gsap.from(".show-section img", {
 
 
 gsap.from(".banner h2", {
-    y:100,
-    skewY:5,
+    y: 100,
+    skewY: 5,
     opacity: 0,
     duration: 1,
     stagger: {
@@ -193,7 +196,7 @@ gsap.from(".banner h2", {
         toggleActions: "play resume complete pause",
     },
 },
-"-=1"
+    "-=1"
 );
 
 gsap.from(".grow-section h2", {
@@ -213,9 +216,9 @@ gsap.to(".grow-section img", {
     scrub: 5,
     scrollTrigger: {
         trigger: ".img-container",
-        start: "top 30%", 
+        start: "top 30%",
         end: "top -2%",
-        toggleActions: "restart none none none",  
+        toggleActions: "restart none none none",
         //              onEnter onLeave onEnterBack onLeaveBack
         scrub: 1,
         // markers: {      
@@ -233,9 +236,9 @@ gsap.to(".grow-section img", {
     scrub: 5,
     scrollTrigger: {
         trigger: ".img-container",
-        start: "bottom 70%", 
+        start: "bottom 70%",
         end: "bottom 40%",
-        toggleActions: "restart none none none",  
+        toggleActions: "restart none none none",
         //              onEnter onLeave onEnterBack onLeaveBack
         scrub: 1,
         // markers: {      

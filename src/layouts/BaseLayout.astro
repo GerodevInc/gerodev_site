@@ -1,0 +1,25 @@
+---
+const { meta = {} } = Astro.props;
+
+import ExtraMetaTags from "../components/widgets/ExtraMetaTags.astro";
+import MetaTags from "../components/widgets/MetaTags.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaTags {...meta} />
+    <ExtraMetaTags></ExtraMetaTags>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

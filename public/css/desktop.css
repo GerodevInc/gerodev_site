@@ -211,7 +211,7 @@ main .grow-section{
     width: 90%;
     max-width: 1700px;
     margin-top: 80px;
-    background-image: url("../assets/imgs/background-arrows.png");
+    background-image: url("../img/background-arrows.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

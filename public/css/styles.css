@@ -222,7 +222,7 @@ main .offer-section .main-txt .check-marks div {
 
 main .offer-section .main-txt .check-marks i{
     display: inline-block;
-    background-image: url("../assets/icons/icons8-checkmark.svg");
+    background-image: url("../img/icons8-checkmark.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 20px;
